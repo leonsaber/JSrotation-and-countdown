@@ -1,4 +1,7 @@
 
+//I chose this JS(JQuery) code to preset my personal JS skill in complex animation effect implementation, this JQuery code can work efficiently and fluently on any mobile device.
+//Want full version demo? 
+
 (function($){
 	
 	// Number of seconds in every time division

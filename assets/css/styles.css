@@ -1,0 +1,179 @@
+ html, body, #a 
+{
+	display:block;
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width:100%;		
+	overflow: hidden;
+}
+#a
+{
+	display: table;
+}
+
+#b
+{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+#content
+{
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+#map
+{
+	position:absolute;
+	margin:auto;
+	left:0;
+	right:0;
+	bottom:-325px;
+	height:650px;
+	width:650px;
+	text-align:center;
+}
+#map img
+{
+	height:650px;
+	width:650px;
+}
+	/*@media screend (orientation : portrait){
+		#map{
+		position:absolute;
+		margin:auto;	
+		left:0;
+		right:0;
+		height:650px;
+		width:650px; 
+		text-align:center;
+		}
+		}*/
+body
+{
+	animation: daily 10s infinite alternate;
+	-moz-animation: daily 10s infinite alternate;
+	-webkit-animation: daily 10s infinite alternate;
+	-o-animation: daily 10s infinite alternate;
+}
+.roll
+{
+	animation: rotate 40s infinite linear;
+	-moz-animation: rotate 40s infinite linear;
+	-webkit-animation: rotate 40s infinite linear;
+	-o-animation: rotate 40s infinite linear;
+}
+@keyframes daily
+{
+	from{background:#DBF5F5;}
+	to{background:#3F4972;}		
+}
+@-moz-keyframes daily /* Firefox */
+{
+	from{background:#DBF5F5;}
+	to{background:#3F4972;}
+}
+	
+@-webkit-keyframes daily /* Safari & Chrome */
+{
+	from{background:#DBF5F5;}
+	to{background:#3F4972;}
+}
+	
+@-o-keyframes daily /* Opera */
+{
+	from{background:#DBF5F5;}
+	to{background:#3F4972;}
+}
+
+@keyframes rotate
+{
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+@-moz-keyframes rotate
+{
+	from {-moz-transform:rotate(0deg);}
+	to {-moz-transform:rotate(360deg);}
+}
+@-webkit-keyframes rotate
+{
+	from {-webkit-transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);}
+}
+@-o-keyframes rotate
+{
+	from {-o-transform:rotate(0deg);}
+	to {-o-transform:rotate(360deg);}
+}	
+
+/*----------------------------
+	Main Section
+-----------------------------*/
+
+#note{
+	color: #666666;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 4px;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	width: 400px;
+}
+
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+footer{
+	background-color: #111111;
+	bottom: 0;
+	box-shadow: 0 -1px 2px #111111;
+	height: 45px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+
+footer h2{
+	color: #EEEEEE;
+	font-size: 14px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -400px;
+	padding: 13px 0 0;
+	position: absolute;
+	width: 540px;
+}
+
+footer h2 i{
+	font-style:normal;
+	color:#888;
+}
+
+footer a.tzine,a.tzine:visited{
+	color: #999999;
+	font-size: 12px;
+	left: 50%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+footer a i{
+	color:#ccc;
+	font-style: normal;
+}
+
+footer a i b{
+	color:#c92020;
+	font-weight: normal;
+}
